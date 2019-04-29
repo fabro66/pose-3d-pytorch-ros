@@ -8,7 +8,7 @@ In this paper the author proposes a weakly-supervised transfer learning method t
 
 I just visualized the author's 3D pose estimation results on ROS Rviz. The effect is as follows:
 
-<div align=center><img width="640" height="360" src="https://github.com/mengyingfei/PytorchPose_ws/blob/master/image/3D%20pose%20ROS.gif"/></div>
+<div align=center><img width="640" height="360" src="https://github.com/mengyingfei/pose-3d-pytorch-ros/blob/master/3D%20pose%20ROS.gif"/></div>
 
 **<span style="color:red">Note: </span>** I only modified the following files:
 - modified **pytorch-pose-hg-3d/src/demo.py** into **demo_ros.py** for ROS RViz. Also, the **demo.py** and **pytorch-pose-hg-3d/src/lib/utils/debugger.py** has modified to estimate pose from the video or image.
