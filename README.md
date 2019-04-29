@@ -1,6 +1,10 @@
 # 3D pose estimation from a simple RGB image implementated by PyTorch for ROS
 
-This repository is entirely from the paper:**Towards 3D Human Pose Estimation in the Wild: a Weakly-supervised Approach**([arXiv:1704.02447](https://arxiv.org/abs/1704.02447)). [Code](https://github.com/xingyizhou/pytorch-pose-hg-3d).
+This repository is entirely from the paper:**Towards 3D Human Pose Estimation in the Wild: a Weakly-supervised Approach**([arXiv:1704.02447](https://arxiv.org/abs/1704.02447)). [Code](https://github.com/xingyizhou/pytorch-pose-hg-3d).  
+
+<p align="center"> 
+  <img src="teaser.png" width="350"/>
+</p>
 
 In this paper the author proposes a weakly-supervised transfer learning method that uses mixed 2D and 3D labels in a unified deep neutral network that presents two-stage cascaded structure. The network augments a state-of-the-art(2017) 2D pose estimation sub-network with a 3D depth regression sub-network. Unlike previous two stage approaches that train the two sub-networks sequentially and separately, our training is end-to-end and fully exploits the correlation between the 2D pose and depth estimation sub-tasks. The deep features are better learnt through shared representations. In doing so, the 3D pose labels in controlled lab environments are transferred to in the wild images. In addition, we introduce a 3D geometric constraint to regularize the 3D pose prediction, which is effective in the absence of ground truth depth labels. 
 
