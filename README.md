@@ -20,7 +20,7 @@ I just visualized the author's 3D pose estimation results on ROS Rviz. The effec
 - add the **rviz** package in  **pytorch-pose-hg-3d/src/rviz for ROS**.
 
 ## Requirements
-It is recommended to install python requirements in a virtual environment created by conda.
+It is recommended to install python requirements in a virtual environment created by conda.  
 Create an virtual environment named pose_estimation_ros in conda:
 ~~~
 # create env and install requirements
@@ -33,7 +33,7 @@ Create an virtual environment named pose_estimation_ros in conda:
 > conda install libgcc
 ~~~
 - python(2.7)
-- pytorch(1.0)
+- PyTorch(1.0)
 - ROS(Kinetic Kame on Ubuntu 16.04 or Melodic Morenia on Ubuntu 18.04)
 - matplotlib
 - opencv
