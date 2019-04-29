@@ -38,7 +38,38 @@ Create an virtual environment named pose_estimation_ros in conda:
 Pretend that you have installed the above dependencies.
 1. Create a ROS workpsace
 ~~~
+# activate the env
+> source activate pose_estimation_ros
+# the path /opt/ros/melodic/setup.bash depended the version of your installed ros
+> source /opt/ros/melodic/setup.bash
 > mkdir -p pose_estimation_ws/src && cd pose_estimation_ws
 > catkin_make
 > source ./devel/setup.bash
 ~~~
+
+2. Clone the repo:
+~~~
+> cd src
+> POSE_ROOT=/path/to/clone/pytorch-pose-hg-3d
+> git clone https://github.com/mengyingfei/pose-3d-pytorch-ros POSE_ROOT
+> cd ..
+> catkin_make
+> source ./devel/setup.bash
+~~~
+
+## Testing  
+Download  pre-trained [model](https://drive.google.com/a/utexas.edu/file/d/1mUEybux3YZ2VhSjs-k4kBadbrT5qx09i/view?usp=sharing) and move it to `models`.  
+> Open terminal  
+~~~
+> roscore
+~~~
+> Open another terminal  
+~~~
+> rosrun pose-3d-pytorch-ros demo_ros.py --demo /path/to/video
+~~~  
+> Open another terminal  
+~~~
+> rosrun rviz rviz
+~~~  
+
+Finally you will see the effect shown above!
