@@ -10,7 +10,7 @@ In this paper the author proposes a weakly-supervised transfer learning method t
 
 ## Added functionality
 
-I just visualized the author's 3D pose estimation results on ROS Rviz. The effect is as follows:
+I just visualized the author's 3D pose estimation results on ROS Rviz. The result is as follows:
 
 <div align=center><img width="640" height="360" src="https://github.com/mengyingfei/pose-3d-pytorch-ros/blob/master/3D%20pose%20ROS.gif"/></div>
 
@@ -76,4 +76,4 @@ Download  pre-trained [model](https://drive.google.com/a/utexas.edu/file/d/1mUEy
 > rosrun rviz rviz
 ~~~  
 
-Finally you will see the effect shown above!
+Finally you will see the result shown above!
